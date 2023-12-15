@@ -8,7 +8,7 @@ MeRGBLed led(0,30);
 int speed = 100;
 void moveForward(int d) {
     motor1.run(-speed);
-    motor2.run(speed-8 );
+    motor2.run(speed-8);
     delay(d);
     motor1.stop();
     motor2.stop();
@@ -51,11 +51,11 @@ void loop() {
   Serial.print(ultraSonic.distanceCm());
   Serial.println(" cm");
   moveForward(100);
-  if(ultraSonic.distanceCm() < 7) {
+  if(ultraSonic.distanceCm() < 5) {
     turnLeft(810);
     delay(500);
     if(ultraSonic.distanceCm() < 7) {
-      turnRight(1450);
+      turnRight(1500);
       if(ultraSonic.distanceCm() < 7) {
         turnLeft(810);
         moveBackward(1800);
@@ -63,4 +63,4 @@ void loop() {
       }
     }
   }
-}//hi
+}
