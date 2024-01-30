@@ -61,6 +61,6 @@ void loop() {
         moveBackward(1800);
         turnRight(740);
       }
-    }
+    }//
   }
 }
