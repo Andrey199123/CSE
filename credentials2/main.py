@@ -51,8 +51,8 @@ def password_exists(password):
 
 create_username()
 password = create_password()
-if password_exists(password):
+while password_exists(password):
     print("Password already exists")
-else:
-    save_password(password)
-    print("Password created.")
+    password = create_password()
+save_password(password)
+print("Password created.")
