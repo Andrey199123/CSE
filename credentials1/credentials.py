@@ -21,9 +21,14 @@ def create_password():
 
 
 def save_password(password):
-    with open("passwords.txt", "a") as file:
-        file.write(f"{password}\n")
-    print("Password saved")
+    try:
+        with open("passwords.txt", "a") as file:
+            file.write(f"{password}\n")
+        print("Password saved")
+    except:
+        with open("passwords.txt", "x") as file:
+            file.write(f"{password}\n")
+        print("Password saved")
 
 
 create_username()
