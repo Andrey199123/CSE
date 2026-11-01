@@ -1,21 +1,15 @@
-# Computer Science & Engineering Coursework
+# Computer Science & Engineering
 
-**Early Python programming and Arduino robotics exercises.**
+Python coursework and Arduino robotics projects from my early programming classes
 
-A learning archive covering functions, lists, file storage, user interaction, and sensor-driven control—not a production application.
+## Robotics
 
-## Repository guide
+[Line Follower](lineFollower/) and its [earlier version](lineFollower_1.0/) use a line sensor to steer an mBot through motor corrections. [Maze](Maze/) uses an ultrasonic sensor to guide movement and turns
 
-- [Lab3](Lab3/): word-length and lap-time exercises.
-- [LabLists](LabLists/): numeric analysis and list-based programs.
-- [LabsFunctions](LabsFunctions/): grading, comparisons, and rock–paper–scissors.
-- [AttendanceProject](AttendanceProject/): a local attendance-tracking exercise.
-- [lineFollower](lineFollower/) and [lineFollower_1.0](lineFollower_1.0/): Arduino line-following iterations.
-- [Maze](Maze/): Arduino maze-navigation code.
-- `Credentials3/`, `credentials1/`, and `credentials2/`: classroom storage exercises, **not secure authentication implementations**. Sample password files were intentionally removed from the public repository.
+The sketches use Makeblock's `MeMCore` library with board-specific sensor ports and motor settings
 
-## Running an exercise
+## Python
 
-Use Python 3 for individual scripts after inspecting inputs and file paths. Arduino sketches require the corresponding board, sensors, and pin configuration; inspect each sketch before uploading.
+Exercises cover functions, lists, file storage, and interactive programs, including rock–paper–scissors, grade calculations, lap-time analysis, and attendance tracking
 
-Use synthetic data only. Do not put real passwords, attendance records, or identifying information into these exercises or reuse their storage patterns in a real service.
+The `credentials1`, `credentials2`, and `Credentials3` folders contain classroom storage exercises, not secure authentication code
