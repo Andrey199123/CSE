@@ -1,6 +1,6 @@
 # Computer Science & Engineering
 
-Python coursework and Arduino robotics projects from my early programming classes
+Python coursework and Arduino robotics projects from my freshman-year computer science class at American Heritage School
 
 ## Robotics
 
